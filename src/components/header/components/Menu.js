@@ -12,9 +12,9 @@ export default function Menu({
       {/* lists */}
       <div className={`${styles.lists}`}>
         {/* departments */}
-        {departments && departments.map(d =>
+        {departments && departments.map((d, index) =>
           <div className={styles.tag}
-            key={d.departmentName}
+            key={d.departmentName + index}
           >
             <DropList
               clickCategory={(c) => getProductsByCategory(c)}
