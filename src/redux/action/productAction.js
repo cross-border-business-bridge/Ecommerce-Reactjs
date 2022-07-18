@@ -96,6 +96,11 @@ export const search=(text)=>dispatch=>{
   })
 }
 
+/**
+ * product filtered by ...
+ * @param filter_string
+ * @returns {function(*): Promise<AxiosResponse<any>>}
+ */
 export const applyFilters=(filter_string)=>dispatch=>{
   dispatch({
     type:APPLY_FILTERS_BEGIN,

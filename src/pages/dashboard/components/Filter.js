@@ -18,6 +18,7 @@ export default class Filter extends Component {
     this.state = this.initialState
   }
   handleChange = (e, category, name) => {
+    console.log(`handleChange ${category} ${name}`)
     let tagName = ''
     let isChecked = false
     //handle div click
@@ -49,6 +50,7 @@ export default class Filter extends Component {
         }
       }
     }, () => {
+      // after new state take affection
       this.props.applyFilters(generateFilterString(this.state))
     })
   }

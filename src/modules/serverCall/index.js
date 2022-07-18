@@ -21,6 +21,10 @@ const serverCall = (config) => {
       return response;
     },
     function (error) {
+      // console.warn(`warn: ${JSON.stringify(error)}`)
+      console.warn('<<< fail response')
+      console.warn(error)
+
       if (!error.response) {
         error.response = {
           data: 'net work error',
@@ -35,6 +39,9 @@ const serverCall = (config) => {
       return Promise.reject(error);
     });
   config.baseURL = URL
+
+  console.log(`>>>${config.method}: ${config.url}`)
+
   return axios(config)
 }
 export default serverCall
