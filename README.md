@@ -1,5 +1,8 @@
 # Full stack ecommerce online store application
 
+## Notice
+We are seeking developers to achieve wonderful projects, improve your programming skill then enhancing your great career building. Drop us a message if you are interested.
+
 #### back-end code [click here](https://github.com/levelopers/Ecommerce-Nodejs)
 
 ## General Info 
