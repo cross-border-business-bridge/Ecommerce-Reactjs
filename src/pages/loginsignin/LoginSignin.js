@@ -5,7 +5,6 @@ import capitalizeString from './utils/capitalizeString'
 import jumpTo from '../../modules/Navigation'
 import LoadingAnimation from '../../components/loadingAnimation'
 
-
 export default class LoginSignin extends Component {
     constructor(props) {
         super(props)
@@ -91,6 +90,7 @@ export default class LoginSignin extends Component {
     }
 
     render() {
+
         return (
             <div className={styles.outbox}>
                 <div className={styles.box}>

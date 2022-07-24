@@ -8,7 +8,6 @@ import {
     validateUpperCase
 } from './utils/validation'
 
-
 const INPUT_CONFIG = [
     {
         name: "email",

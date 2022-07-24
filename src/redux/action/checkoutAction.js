@@ -28,6 +28,7 @@ export const getPayment = (paymentId, PayerID) => dispatch => {
     dispatch({
         type: GET_PAYMENT_BEGIN,
     })
+
     return getPaypalToken()
         .then(response => {
             return serverCall({

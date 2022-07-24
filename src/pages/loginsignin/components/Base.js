@@ -19,7 +19,7 @@ export default function Base({
         <div className={styles.outbox}>
             <div className={styles.logo}>Zack Market</div>
             <div className={styles.title_style}>{title}</div>
-            <div className={styles.border_style}></div>
+            <div className={styles.border_style}/>
             {
                 inputs.map(({name, validations}) =>
                     <FormInput

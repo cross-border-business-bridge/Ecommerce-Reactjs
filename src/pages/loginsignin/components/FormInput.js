@@ -17,6 +17,7 @@ export default function FormInput({
             </div>
             <div className={styles.input}>
                 <input
+                    // TODO , type props is better
                     type={name.indexOf('assword') > -1 ? 'password' : 'text'}
                     name={name}
                     placeholder={name}
