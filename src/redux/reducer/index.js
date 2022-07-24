@@ -9,12 +9,12 @@ import checkout from './checkoutReducer'
 import filter from './filterReducer'
 
 export default combineReducers({
-  token,
-  signin,
-  department,
-  product,
-  variant,
-  cart,
-  checkout,
-  filter
+    token,
+    signin,
+    department,
+    product,
+    variant,
+    cart,
+    checkout,
+    filter
 })
