@@ -5,6 +5,7 @@ import Header from '../../components/header/headerContainer'
 import Variants from './components/Variants'
 import mergeProductAndVariants from './utils/mergeProductAndVariants'
 import jumpTo from '../../modules/Navigation'
+import Comments from "../Comments/CommentsContainer";
 
 export default class ProductOverview extends Component {
     constructor(props) {
@@ -49,6 +50,9 @@ export default class ProductOverview extends Component {
     }
 
     render() {
+        const {product}  = this.props
+        console.log(product)
+
         return (
             <div className={styles.outbox}>
                 <Header/>
@@ -85,6 +89,11 @@ export default class ProductOverview extends Component {
                                         clickSize={this.clickSize}
                                     />
                                 </div>
+                                {/*User allComments on this product */}
+                                <Comments
+                                    productId={product?._id}
+                                />
+
                                 <div className={styles.btns}>
                                     <Button className={styles.btn} onClick={this.addToBag} variant="outline-primary">Add
                                         to Bag</Button>
